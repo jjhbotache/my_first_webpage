@@ -1,0 +1,61 @@
+#carouselExampleSlidesOnly{
+    height: 20%;
+}
+
+.full{
+	border: solid;
+	height:	100%;
+}
+.border{
+	overflow: hidden;
+}
+.carousel-inner{
+	height: 100%;
+}
+
+.carousel-item{
+    min-height: 30vh;
+	position: relative;
+}
+.carousel-item img{
+	max-height: 25vh;
+	width: 100%;
+}
+.carousel-control-next{
+	background: rgba(0, 0, 0, 0);
+	height: 100% !important;
+	left: 0 !important;
+	width: 100% !important;
+}
+
+/* special carousels */
+.carousel-css {
+    box-shadow: 0px 1px 6px rgba(0, 0, 0, 0.64);
+    margin-top: 26px;
+    position: relative;
+    width: 100%;
+}
+
+.carousel-css-inner {
+    overflow: hidden;
+    position: relative;
+    width: 100%;
+}
+
+
+.carousel-css-item {
+    opacity: 0;
+    position: absolute;
+    transition: opacity 0.6s ease-out;
+}
+
+.carousel-css-input:checked + .carousel-css-item {
+    position: static;
+    opacity: 1;
+}
+.carousel-css-input:checked + .carousel-css-item img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    z-index: 50;
+}

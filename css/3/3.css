@@ -1,0 +1,62 @@
+.ribbon{
+	padding: 4vh 0px;
+	background: var(--bg-cuaternary);
+}
+@media all and (min-width: 1px) and (max-width: 576px) {
+	.ribbon{
+		margin: 4rem 0px;
+		/* min-height: 40vh; */
+	}
+}
+@media all and (min-width: 576px) {
+	h1{
+		font-size: 5rem;
+	}
+	/* ribbons */
+	.ribbon{
+		margin: 0.1rem 0px;
+		min-height: 44vh;
+		position: relative;
+		z-index: 10;
+	}
+	#ribbon1{
+		border: solid 0.3rem var(--bg-primary);
+		border-right:none;
+		border-radius: 20rem 0rem 0rem 20rem;
+	}
+	#ribbon2{
+		border: solid 0.3rem var(--bg-primary);
+		border-left:none;
+		border-radius: 0rem 20rem 20rem 0rem;
+	}
+	/* descriptions */
+	#description1{
+		left: 10rem;
+	}
+	#description2{
+		right: 10rem;
+	}
+	.description{
+		min-height: 44vh;
+		position: absolute;
+		width: 100%;
+		transition: margin-top 1s ease-in-out;
+	}
+	#description1{
+		background-color: rgba(255, 0, 0, 0.5);
+		z-index: 0;
+	}
+	
+	#description2{
+		background-color: rgba(0, 255, 0, 0.5);
+		margin-top: 44.8vh;
+		z-index: 0;
+	}
+	/* movement */
+	.d1appears{
+		margin-top: 40vh !important;
+	}
+	.d2appears{
+		margin-top: 0vh !important;
+	}
+}

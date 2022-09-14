@@ -1,0 +1,110 @@
+/*_______________________ variables __________________________*/
+:root{
+	--bg-primary: #F8BA34;
+	--bg-secondary: #FF9100;
+	--bg-tertiary: #E6E3A9;
+	--bg-cuaternary: #E6E9CD;
+}
+/*____________________________________________________________*/
+
+
+body{
+	background-color: var(--bg-cuaternary);
+}
+
+/*------------------------- navbar ---------------------------------*/
+#navbar{
+	background-color: var(--bg-tertiary);
+}
+
+#navbar .nav-link{
+	font-size: 1.5em;
+	color: var(--bg-primary);
+	padding:0.5em 1em;
+}
+
+#navbar .tabs .active{
+	color: var(--bg-secondary);
+	background-color: var(--bg-cuaternary);
+}
+
+#navbar img{
+	height: 10vh;
+}
+
+#navbar #button{
+	height: 8vh;
+	padding-top:1em;
+	color: var(--bg-primary);	
+}
+#navbar .list-group-item{
+	background-color: var(--bg-tertiary);
+}
+#navbar .list-group-item:hover{
+	border-color: var(--bg-secondary);
+}
+#navbar #list .active {
+	color: var(--bg-secondary);
+	border-color: var(--bg-secondary);
+}
+
+
+/*------------------------------------------------------------------*/
+
+/*------------------------- main ----------------------------------*/
+#main{
+	margin-bottom: 5rem;
+}
+#main h1{
+	font-size: 3em;
+}
+#main a{
+	color: var(--bg-primary);
+}
+/*-----------------------------------------------------------------*/
+
+/*------------------------ sub-windows ---------------------------*/
+#sub-windows div #real_container{
+	cursor: pointer;
+	height: 3rem;
+	width: 3rem;
+	background-color: var(--bg-primary);
+	opacity: 0.75;
+	transition: 0.5s;
+	box-shadow: 0px 0px 15px 0px rgba(0,0,0,0.75);
+}
+#sub-windows div #real_container:hover{
+	opacity: 1;
+	box-shadow: 0px 0px 5px 0px rgba(0,0,0,0.75);
+}
+#sub-windows #sub-window{
+	z-index: 5;
+	height: 34rem;
+	width: 10rem;
+	background-color: var(--bg-secondary);
+	border-top-left-radius:2em ;
+	border-bottom-left-radius:2em ;
+	box-shadow: 0px 0px 20px 5px rgba(0,0,0,0.75);
+}
+#sub-windows #sub-window img{
+	height: 4em;
+	width: 4em;
+	/*margin: 2em 0em;*/
+}
+#sub-windows #sub-window .x{
+	z-index: 4;
+}
+/*-----------------------------------------------------------------*/
+/*------------------------ footer ---------------------------------*/
+#footer{
+	padding-top: 2rem;
+	padding-bottom: 2rem;
+	min-height: 18vh !important;
+}
+#footer p{
+	color: var(--bg-cuaternary);
+}
+#footer img{
+	height: 2em;
+}
+/*-----------------------------------------------------------------*/

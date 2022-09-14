@@ -1,0 +1,84 @@
+#atril{
+	background-image: url('../media/hobbies/atril.svg');
+	background-repeat: no-repeat;
+	background-position-x: center;
+	background-size: auto;
+	padding: 24% 0px;
+}
+
+#atril p{
+	margin: 0% 30%;
+	max-height:52vw;
+	overflow: hidden;
+}
+
+@media all and (min-width: 1px) and (max-width: 576px) {
+	.carousel-item img{
+		max-height: 25vh;
+		width: auto;
+	}
+	.carousel-item p{
+		font-size: 0.75em;
+	}
+}
+
+/* --------------------------------- cool carousel -------------------------- */
+#cool_carousel #atril p{
+	padding: 1em;
+	opacity: 0;
+	transition: opacity 0.5s;
+	font-size: 0.8rem;
+}
+#cool_carousel{
+	min-height: 110vh;
+	width: 100%;
+}
+#cool_carousel input{
+	display: none;
+}
+
+#cool_carousel .cards{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+#cool_carousel .card{
+	border: 0px;
+    position: absolute;
+    width: 60%;
+    height: 100%;
+    left: 0;
+    right: 0;
+    margin: auto;
+    cursor: pointer;
+    transition: transform 0.2s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+#cool_carousel .card img{
+	max-height:20vh ;
+    height: auto;
+    object-fit: cover;
+}
+
+#item-2:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-3,
+#item-3:checked ~ .cards #selector-2{
+    transform: translateX(-30vw) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-3:checked ~ .cards #selector-1,
+#item-1:checked ~ .cards #selector-2,
+#item-2:checked ~ .cards #selector-3{
+    transform: translateX(30vw) scale(0.8);
+    opacity: 0.6;
+    z-index: 0;
+}
+
+#item-1:checked ~ .cards #selector-1,
+#item-2:checke	~ .cards #selector-2,
+#item-3:checked ~ .cards #selector-3{
+    transform: translateX(0) scale(1);
+    z-index: 1;
+}
+/* ------------------------------------------------------------------------------------ */
